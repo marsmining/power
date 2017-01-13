@@ -14,3 +14,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - package.json
+  - yarn.lock
+
+sass:
+  sass_dir: node_modules/bootstrap

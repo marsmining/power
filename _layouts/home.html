@@ -1,7 +1,11 @@
 <html>
-  <title>{{ site.title }}</title>
-
+  <head>
+    <title>{{ site.title }} -> {{ page.title }}</title>
+    <link href="/assets/css/main.css" rel="stylesheet">
+  </head>
   <body>
-    {{ content }}
+    <div class="container">
+      {{ content }}
+    </div>
   </body>
 </html>
