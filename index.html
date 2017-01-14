@@ -15,3 +15,27 @@ title: Home for Pow
   <p>All good things to those who wait</p>
   <footer><cite>William</cite></footer>
 </blockquote>
+
+<h2>Collection testing</h2>
+
+{% for section in site.sections %}
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top"
+       src="http://unionsquareshop.com/assets/img/front-page/storeHours-300x200.jpg"
+       alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">{{ section.title }}</h4>
+    <p class="card-text">
+      Name: <pre> {{ section.url }} </pre>
+      <ul>
+        {% for s in section.stores %}
+        <li>{{ s }}</li>
+        {% endfor %}
+      </ul>
+    </p>
+    <a href="{{ section.url }}" class="btn btn-primary">{{ section.title }}</a>
+  </div>
+</div>
+
+{% endfor %}

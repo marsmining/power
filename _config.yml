@@ -20,3 +20,8 @@ exclude:
 
 sass:
   sass_dir: node_modules/bootstrap
+
+collections:
+  sections:
+    description: Features of the district
+    output: true
